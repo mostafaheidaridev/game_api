@@ -1,0 +1,10 @@
+services:
+  - type: static_site
+    name: rawg-frontend
+    rootDir: rawg-frontend
+    buildCommand: npm install && npm run build
+    publishPath: dist
+    # Set this in the Render Dashboard: Settings → Environment
+    # envVars:
+    #   - key: VITE_API_KEY
+    #     value: your_rawg_api_key_here
